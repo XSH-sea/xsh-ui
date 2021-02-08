@@ -1,10 +1,11 @@
 {
   "name": "xsh-ui",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name xsh-ui --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -17,6 +18,7 @@
     "@vue/cli-service": "^4.5.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.2",
+    "vue-markdown-loader": "^2.4.1",
     "vue-template-compiler": "^2.6.11"
   }
 }
